@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="weather-card">
+      <header class="search-panel">
+        <h1>Weather App</h1>
+        <div class="search-group">
+          <input id="cityInput" type="search" placeholder="Enter a city" aria-label="City name" />
+          <button id="searchButton" type="button">Search</button>
+        </div>
+        <p id="errorMessage" class="error-message" aria-live="polite"></p>
+      </header>
+
+      <section class="location-panel">
+        <p class="label">Location</p>
+        <h2 id="locationName">Search for a city</h2>
+      </section>
+
+      <section class="weather-panel">
+        <div class="weather-primary">
+          <p class="label">Current</p>
+          <div class="temp-row">
+            <span id="temperature">--</span>
+            <span class="unit">°C</span>
+          </div>
+          <p id="condition">Waiting for search...</p>
+        </div>
+        <div class="weather-details">
+          <div class="detail-card">
+            <span>Humidity</span>
+            <strong id="humidity">--</strong>
+          </div>
+          <div class="detail-card">
+            <span>Wind speed</span>
+            <strong id="windSpeed">--</strong>
+          </div>
+          <div class="detail-card">
+            <span>Feels like</span>
+            <strong id="feelsLike">--</strong>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
